@@ -1,7 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-require("dotenv").config();
+require("dotenv").config({ path: "./.github/workflows/foodbridge-backend/.env" });
+
 
 const foodRoutes = require("./routes/foodRoutes");
 const ngoRoutes = require("./routes/ngoRoutes");
