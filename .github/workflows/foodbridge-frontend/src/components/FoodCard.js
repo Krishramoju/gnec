@@ -4,6 +4,7 @@ const FoodCard = ({ food }) => {
       <h3 className="text-xl font-bold">{food.name}</h3>
       <p>Quantity: {food.quantity}</p>
       <p>Donor: {food.donor}</p>
+      {food.ngoAssigned && <p>Assigned to NGO: {food.ngoAssigned.name}</p>}
     </div>
   );
 };
